@@ -36,7 +36,7 @@ class AnimatedListSelector extends StatefulWidget {
 }
 
 class _AnimatedListSelectorState extends State<AnimatedListSelector> {
-  Duration _duration = Duration(milliseconds: 150);
+  Duration _duration = const Duration(milliseconds: 150);
 
   late ScrollController _controller;
   late List<GlobalKey> _keys;
@@ -148,8 +148,8 @@ class _AnimatedListSelectorState extends State<AnimatedListSelector> {
               duration: _duration,
               height: 20,
               width: _currentWidth,
-              decoration: BoxDecoration(
-                color: const Color.fromRGBO(102, 88, 245, 1),
+              decoration: const BoxDecoration(
+                color: Color.fromRGBO(102, 88, 245, 1),
                 borderRadius: BorderRadius.all(Radius.circular(2)),
               ),
             ),
